@@ -2,8 +2,10 @@ name: deploy-site
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.PORTFOLIO_TOKEN }} # This is automatically set by Github Actions
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.DEPLOY_KEY }} # This is automatically set by Github Actions
   USE_GITHUB_DATA: "true"
+permissions:
+  contents: write
 on:
   workflow_dispatch:
   push:
@@ -44,6 +46,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.PORTFOLIO_TOKEN }}
+          github_token: ${{ secrets.DEPLOY_KEY }}
           BRANCH: gh-pages
           FOLDER: build
