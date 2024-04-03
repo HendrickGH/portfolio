@@ -8,6 +8,7 @@ on:
       - src/**
       - build/**
       - public/**
+      - .github/workflows/deploy.yml
 
 defaults:
   run:
@@ -18,6 +19,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set up Git
+        run: |
+          git config --global user.email "hendrickgalarzahernandez@gmail.com"
+          git config --global user.name "Hendrick"
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run predeploy
