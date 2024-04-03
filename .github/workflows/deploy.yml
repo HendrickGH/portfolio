@@ -18,16 +18,16 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Git
+        run: |
+          git config --global user.email "hendrickghxd@gmail.com"
+          git config --global user.name "Hendrick Galarza Hernandez"
       - uses: actions/checkout@v2
       - name: Install dependencies and deploy
         run: |
           npm install
           npm run predeploy
           npm run deploy
-      - name: Set up Git
-        run: |
-          git config --global user.email "hendrickghxd@gmail.com"
-          git config --global user.name "Hendrick Galarza Hernandez"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
