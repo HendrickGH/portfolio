@@ -1,4 +1,4 @@
-name: deploy-site
+name: Deploying website
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
