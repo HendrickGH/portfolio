@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - src/**
+      - build/**
+      - public/**
 
 defaults:
   run:
