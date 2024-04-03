@@ -20,14 +20,19 @@ jobs:
 
     steps:
       - name: Set up Git
-        run: git config --global user.email "hendrickgalarzahernandez@gmail.com"
+        run: |
+          git config --global user.email "hendrickghxd@gmail.com"
+          git config --global user.name "Hendrick Galarza Hernandez"
         working-directory: ${{ github.workspace }}
-      - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm run predeploy
-      - run: npm run deploy
 
-      - name: Deploy to github pages
+      - name: Local deploy
+        uses: actions/checkout@v2
+        run: |
+          npm install
+          npm run predeploy
+          npm run deploy
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
