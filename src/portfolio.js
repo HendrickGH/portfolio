@@ -150,7 +150,7 @@ const workExperiences = {
       role: "Front End Developer",
       company: "Nebulosa",
       companylogo: require("./assets/images/nebulosa.jpeg"),
-      date: "June 2018 – Present",
+      date: "Jul 2022 – Present",
       desc: "As a Frontend Developer at Nebulosa Studio, I contribute to the construction of websites, utilizing technologies to enhance sales growth for client companies. In my role, I led a recent project with a team of two developers, implementing best practices such as reusability, clean code, and design patterns. We leveraged Next.js (React, HTML5, SCSS, Wordpress) to achieve our goals.",
       descBullets: [
         "Built websites and contributed to sales growth for client companies.",
