@@ -150,7 +150,7 @@ const workExperiences = {
       role: "Front End Developer",
       company: "Nebulosa",
       companylogo: require("./assets/images/nebulosa.jpeg"),
-      date: "Jul 2022 – Present",
+      date: "June 2022 – January 2025",
       desc: "As a Frontend Developer at Nebulosa Studio, I contribute to the construction of websites, utilizing technologies to enhance sales growth for client companies. In my role, I led a recent project with a team of two developers, implementing best practices such as reusability, clean code, and design patterns. We leveraged Next.js (React, HTML5, SCSS, Wordpress) to achieve our goals.",
       descBullets: [
         "Built websites and contributed to sales growth for client companies.",
@@ -163,21 +163,10 @@ const workExperiences = {
       company: "Emonics LLC",
       companylogo: require("./assets/images/emonics.jpeg"),
       date: "Feb 2019 – Jul 2022",
-      desc: "At Emonics MX, I played a pivotal role in developing a large-scale website for our client, Verizon, based in New York. We utilized ReactJS, Redux, SASS, and Node.js for Server Side Rendering (SSR). This project spanned nearly two months, and following its completion, I relocated to Guadalajara, Mexico to assist students in learning the latest technologies and provide guidance in their professional endeavors.",
+      desc: "At Emonics MX, I played a pivotal role in developing a large-scale website for our client, Verizon, based in New Jersey. We utilized ReactJS, Redux, SASS, and Node.js for Server Side Rendering (SSR). This project spanned nearly four months, and following its completion, I relocated to Guadalajara, Mexico to assist teammates and automate repetitive tasks, enhancing the productivity for all the company.",
       descBullets: [
         "Developed a large-scale website for Verizon in New York using ReactJS, Redux, SASS, and Node.js (Server Side Rendering).",
-        "Provided guidance to students in Guadalajara, Mexico, helping them learn the latest technologies and advising them on their jobs."
-      ]
-    },
-    {
-      role: "React Developer",
-      company: "Revelo",
-      companylogo: require("./assets/images/revelo.jpeg"),
-      date: "Nov 2016 – Feb 2019",
-      desc: "During my time at Revelo, I focused on creating responsive designs using React, HTML, and CSS. Additionally, I actively contributed to the implementation of new features such as animations, forms, and landing pages.",
-      descBullets: [
-        "Created responsive designs using React, HTML, and CSS.",
-        "Contributed to the implementation of new features such as animations, forms, and landing pages."
+        "Help to improve the productivity for the main company"
       ]
     }
   ]
